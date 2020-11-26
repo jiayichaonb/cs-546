@@ -1,0 +1,144 @@
+{
+    "seedUser": [
+        {
+            "username": "sampUser1",
+            "password": "asdfg",
+            "email": "suser1@gmail.com"
+        },
+        {
+            "username": "sampUser2",
+            "password": "qwerty",
+            "email": "suser2@yahoo.com"
+        },
+        {
+            "username": "sampUser3",
+            "password": "zxcvb",
+            "email": "suser3@qq.com"
+        },
+        {
+            "username": "sampUser4",
+            "password": "abcdefg",
+            "email": "suser4@yandex.com"
+        },
+        {
+            "username": "sampUser5",
+            "password": "klmnop",
+            "email": "suser5@hotmail.com"
+        },
+        {
+            "username": "phill",
+            "password": "qwerty",
+            "email": "phill@hotmail.com"
+        }
+    ],
+    "seedPost": [
+        {
+            "title": "Fun car for 5k or under",
+            "author": "sampUser1",
+            "category": "Automobile",
+            "content": "I would like to fun a sporty, fun car with a manual transmission for under 5k dollars. Any suggestions?"
+        },
+        {
+            "title": "Incoming college freshman looking to buy first used car",
+            "author": "sampUser2",
+            "category": "Automobile",
+            "content": "Hey guys, I'm looking to buy a used car with good fuel economy, reliability, and a degree of sportiness I guess. I'll primarily be living in a college town, but will be driving home once every month on the highway for three hours at a time.So far I've looked at the Honda Civic coupe (2016-2017), the Toyota Yaris iA (2017), the Toyota 86, and the Corolla. My budget is preferrably less than 15k, and my parents prefer the car has less than 40k miles on it, so pretty much most of the newer civics in the area are out of the question."
+        },
+        {
+            "title": "Should I buy a cheaper used car or lease a new car if I only plan on only having it for 2-3 years?",
+            "author": "sampUser3",
+            "category": "Automobile",
+            "content": "I plan on traveling/moving out of the US in a few (2-3) years so I don't think I will own the car for a while. Initially I was thinking of buying with cash a 2016 Honda Civic for around 18k max and driving it until I leave but I was curious if leasing would be an option too. I think having monthly payments would work better for me as I can invest the rest and a lease of 2-3 years would be a good time frame. In addition, I can probably get a luxury car like Mercedes, Audi and won't have to deal with the hassle of selling later."
+        },
+        {
+            "title": "Which Corolla engines had issues?",
+            "author": "sampUser4",
+            "category": "Automobile",
+            "content": " "
+        },
+        {
+            "title": "First car purchase- what do you recommend for used?",
+            "author": "sampUser5",
+            "category": "Automobile",
+            "content": "I really appreciate any knowledge! My parent’s loaner for me is on it’s last leg and I’m in need of a replacement. Some key notes: -Budget of ~10k, I’m wanting to pay down 80% and the rest over time. -Looking for an SUV -Reliability is really important, I want this car to last as long as possible -Affordable maintenance"
+        },
+        {
+            "title": "[freshman] where can i go on washington wednesday?",
+            "author": "sampUser1",
+            "category": "Food",
+            "content": " "
+        },
+        {
+            "title": "Does clucku accept duckbills?",
+            "author": "sampUser2",
+            "category": "Food",
+            "content": " "
+        },
+        {
+            "title": "What time does pierce close?",
+            "author": "sampUser3",
+            "category": "Food",
+            "content": " "
+        },
+        {
+            "title": "Places to go for bruch?",
+            "author": "sampUser4",
+            "category": "Food",
+            "content": " "
+        },
+        {
+            "title": "coffee",
+            "author": "sampUser5",
+            "category": "Food",
+            "content": "Where can i get some good gourmet coffee?"
+        },
+        {
+            "title": "venture hacks team",
+            "author": "sampUser3",
+            "category": "Course",
+            "content": "We need two members to join us in the upcoming venture hacks. preferably with front end interests."
+        },
+        {
+            "title": "upcoming hackethons",
+            "author": "sampUser5",
+            "category": "Course",
+            "content": "Any upcoming hackethons recommended? on campus or online."
+        },
+        {
+            "title": "usbc to dp adapter",
+            "author": "sampUser2",
+            "category": "Course",
+            "content": "is there a place near i can buy a usb-c to dp adapter?"
+        },
+        {
+            "title": "iphone se",
+            "author": "sampUser5",
+            "category": "Course",
+            "content": "looking to upgrade. should i get used iphone 11 or new se?"
+        },
+        {
+            "title": "macbook charger",
+            "author": "sampUser1",
+            "category": "Course",
+            "content": "does anyone have magsafe2 charger?"
+        },
+        {
+            "title": "mech solids book",
+            "author": "sampUser2",
+            "category": "Course",
+            "content": "does anyone have mech solids book i can borrow?"
+        },
+        {
+            "title": "favorite quarantine reads",
+            "author": "sampUser1",
+            "category": "Course",
+            "content": "favorite books to read during quarantine"
+        },
+        {
+            "title": "chem book for sale",
+            "author": "sampUser3",
+            "category": "Course",
+            "content": "i have chem book for sale. text me at"
+        }
+    ]
+}

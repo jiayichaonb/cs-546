@@ -1,0 +1,29 @@
+
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/login2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="loginbox">
+    <img src="/public/images/SITF.jpeg" class="avatar" alt="LOGO IMAGE">
+        <h1>Login Here</h1>
+        <form id="login-form">
+            <label for="login-name">Username</label>
+            <input type="text" name="username" placeholder="Enter Username" id="login-name">
+            <label for="login-password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" id="login-password">
+            <label for="submit"><input type="submit" value="Login" id="submit"></label>
+            <a href="#">Forgot password?</a><br>
+            <a href="http://localhost:3000/signup">Haven't created an account yet?</a>
+        </form>
+    </div>
+    <div id="error" hidden></div>
+    {{#if fail}}
+    <div>Please verify your username and password</div>
+    {{/if}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../public/js/login_ajax.js"></script>
+</body>

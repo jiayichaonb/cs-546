@@ -1,0 +1,96 @@
+
+<head>
+  <title> Create Post </title>
+  <link rel="stylesheet" href="/public/css/createPost.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+<div class="container">
+  {{#if update}}
+  <h1 style="text-align: center;">Update your post now</h1>
+  
+  <form action="/update/{{id}}" method="POST" id="updatePost">
+    <div>
+      <label for = "titleID" style="font-weight: bold">Title:</label>
+      <input id = "titleID" type="text" name="title" placeholder="enter your title" value="{{title}}" class="full-width-input"/>  
+    </div>
+    
+    <div>
+      <label for = "contentID" style="font-weight: bold">Content:</label>
+      <textarea name="content" id="contentID" cols="100" rows="10">{{content}}</textarea>
+    </div>
+
+
+    <div>
+      <label for="auto">
+        {{#if autoCategory}}
+        <input type="radio" name="category" value="Automobile" id="auto" checked/> Automobile
+        {{else}}
+        <input type="radio" name="category" value="Automobile" id="auto" /> Automobile
+        {{/if}}
+      </label>
+
+      <label for="food">
+        {{#if foodCategory}}
+        <input type="radio" name="category" value="Food" id="food" checked/> Food
+        {{else}}
+        <input type="radio" name="category" value="Food" id="food" /> Food
+        {{/if}}
+      </label>
+
+      <label for="course">
+        {{#if courseCategory}}
+        <input type="radio" name="category" value="Course" id="course" checked/> Course
+        {{else}}
+        <input type="radio" name="category" value="Course" id="course" /> Course
+        {{/if}}
+      </label>
+    </div>
+    
+    <button type="submit" class = "submit">submit</button>
+  </form>
+
+  {{else}}
+  <h1 style="text-align: center">Create your post now</h1>
+  
+  <form action="/new" method="POST" id="createPost">
+    <div>
+      <label for = "titleID" style="font-weight: bold">Title:</label>
+      <input id = "titleID" type="text" name="title" placeholder="Enter your title" class="full-width-input"/>  
+    </div>
+    
+    <div>
+      <label for = "contentID" style="font-weight: bold">Content:</label>
+      <textarea name="content" id="contentID" placeholder="Anything to share" cols="100" rows="10"></textarea>
+    </div>
+
+
+    <div>
+      <label for="auto">
+        <input type="radio" name="category" value="Automobile" id="auto"/> Automobile
+      </label>
+
+      <label for="food">
+        <input type="radio" name="category" value="Food" id="food"/> Food
+      </label>
+
+      <label for="course">
+        <input type="radio" name="category" value="Course" id="course"/> Course
+      </label>
+    </div>
+    
+    <button type="submit" class = "submit">submit</button>
+  </form>
+  {{/if}}
+  <div id="error" hidden></div>
+  
+<ul>
+  <li><a href="http://localhost:3000" style="color: black;font-weight: bold;font-size: 12pt">Back to Home</a></li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../public/js/createPost_validation.js"></script>
+</div>
+</body>

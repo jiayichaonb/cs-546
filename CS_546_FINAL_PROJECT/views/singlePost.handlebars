@@ -1,0 +1,60 @@
+<head>
+<link rel="stylesheet" href="/public/css/createPost.css">
+  <title>Posts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="container">
+  <h1 style="text-align: center;">Title : {{title}}</h1>
+  <p>Author : {{author}}</p>
+  <p>Content : {{content}}</p>
+<div class = c1 >
+  {{#if user}}
+  <form action="/post/{{id}}/like" method = "POST" class="likeForm"> 
+    <div><p>like:{{lengthOfLike}}</p></div> 
+    <div><button type="submit" class = "likeBTN">like!</button></div>
+  </form>
+
+  <form action="/post/{{id}}/dislike" method = "POST" class = "dislikeForm"> 
+    <div><p>dislike:{{lengthOfDislike}}</p></div>
+    <div><button type="submit" class = "dislikeBTN">dislike!</button></div>
+  </form>
+  {{/if}}
+</div>
+
+  <h2 style="text-align: center;">Comments</h2>
+  {{#if comments}}
+  {{#each comments}}<p></p>
+  <div class= "commentsDiv">
+    <h3>{{this.author}}</h3>
+    <p>{{this.content}}</p>
+  </div>
+  {{/each}}
+  {{else}}
+  <p>There's no comment yet.</p>
+  {{/if}}
+  {{#if user}}
+  <form action="/post/{{id}}" method="POST" id="add-comment">
+    <label for="commentID">
+        <textarea name="comment" id="commentID" cols="30" rows="10"  placeholder="Wanna say anything?"></textarea>
+    </label>
+    <label for="buttonID">
+        <button type="submit" id="buttonID">comment</button>
+    </label>
+    <div id="error" hidden></div>
+  </form>
+  {{/if}}
+  {{#if isAuthor}}
+<div >
+  <a href="/update/{{id}}" style=" color: black;font-weight: bold;font-size: 12pt">Edit</a>
+</div>
+{{/if}}
+
+    <a href="/" style="color: black;font-weight: bold;font-size: 12pt">Back to main page</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../public/js/addComment_validation.js"></script>
+</body>

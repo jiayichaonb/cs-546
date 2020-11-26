@@ -1,0 +1,69 @@
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="../public/css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  
+<br><br><br>
+<div class = div1><ul style="font-family:sans-serif;  font-size:16pt ">
+<li><a href="/">Home</a></li>
+<li><a href="/automobile">Automobile</a></li>
+<li><a href="/Food">Food</a></li>
+<li><a href="/Course">Course</a></li>
+<li ><a href="/new">Createpost</a></li>
+{{#if user}}
+<li ><a href="/logout">Logout</a></li>
+{{else}}
+<li><a href="/login">Sign in</a></li>
+<li><a href="/signup">Register</a></li>
+{{/if}}
+
+
+<li>
+  <form action="/search" method="post">
+  <input type="text" placeholder="Search.." name="searchText" id="searchText">
+  <input type="submit" value="Search" >
+  </form></li>
+</ul>
+</div> 
+<div><a href="" target="_blank">
+<img src="/public/images/SITF.jpeg"  class=bgimg alt="LOGO IMAGE">
+</a></div>
+<span class=border>
+<img src="/public/images/header-background.jpg" alt="BACKGROUND IMAGE"></span>
+<p style="position:absolute; top:145px; right:100px; font-size: 14pt">{{#if user}}
+ Hi, {{user}}!
+{{/if}}</p>
+ 
+
+<p style="position:absolute; top:230px; right:600px;font-size:22px;font-family:sans-serif;opacity:.7"><b>About SITForum</b></p>
+<p style="position:absolute; top:300px;left:100px;font-family:arial;">
+  Our mission is to share and grow the stevens community's knowledge. A great amount of the knowledge that would be valuable to many people who are either new to Stevens, a current student or an alumini which is currently only available to a few — either locked in people’s heads,
+   or only accessible to select groups. We want to connect the people who have knowledge and prior experience with things related to the particular topics to the people who need it, to bring together people with different perspectives so they can understand each other better,
+    and to empower everyone to share their knowledge and past experiences for the benefit of the rest of the community.
+    </p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+{{#each posts}}
+
+<div class="postsDiv">
+  <a href="/post/{{this._id}}" style="color: black;font-weight: bold;font-size: large" >{{this.title}}</a>
+  <p>Author : {{this.author}} &ensp; Catogory : {{this.category}}</p>
+  <p>Likes: {{this.like.length}} and Dislikes: {{this.dislike.length}}</p>
+</div>
+
+{{/each}}
+
+{{#each error}}
+
+<div id="error" class="error">
+  <p>ERROR: {{this.err}}</p>
+  <a href="/">GO HOME</a>
+</div>
+
+{{/each}}
+
+</body>

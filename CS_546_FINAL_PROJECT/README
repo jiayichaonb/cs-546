@@ -1,0 +1,11 @@
+TO run this web app you will need to install node and npm prior to executing following commands.
+
+1. in the terminal navigate to root directory of the project ('/forum_application)'
+2. install dependencies by running 'npm install'
+3. seed the database by running 'npm run seed'
+4. run the server by executing 'npm start' 
+5. visit the webapp on a browser by navigating to 'http://localhost:3000'
+
+Some features require login; sample credentials: username: phill and password: qwerty 
+
+github link: https://github.com/es26es/forum_application.git

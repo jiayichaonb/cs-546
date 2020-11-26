@@ -1,0 +1,72 @@
+html{
+
+    background: url(/public/images/stevens.jpg);
+ 
+}
+
+div.container {
+    border-radius: 5px;
+    background-color: rgb(10, 201, 235);
+    opacity: 0.8;
+    padding: 20px;
+  }
+
+  button:hover {
+    background-color: green;
+  }
+
+
+#titleID{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div{
+    font-family: 'Segoe UI SemiBold';
+    font-size: 14pt;
+    color:black;
+    text-align: left;
+}
+
+button{
+    background-color: darkmagenta;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    font-size: 10pt;
+    margin: 4px 2px;
+}
+
+
+.commentsDiv{
+  font-size: 12pt;
+    color:black;
+    text-align: left;
+  display: inline-block;
+  background-color:gainsboro;
+  border-radius: 20px;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
